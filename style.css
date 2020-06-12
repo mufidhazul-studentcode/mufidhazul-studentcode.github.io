@@ -158,6 +158,17 @@ body {
   position: relative;
 }
 
+.github {
+  height: 128px;
+  width: 128px;
+  background-image: url(img/logogithub.png);
+  top: -5px;
+  right: 295px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  position: absolute;
+}
 .fb {
   height: 128px;
   width: 128px;

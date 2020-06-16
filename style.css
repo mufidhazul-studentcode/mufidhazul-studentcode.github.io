@@ -26,29 +26,16 @@ address,
 big,
 cite,
 code,
-del,
 dfn,
-em,
 img,
-ins,
 kbd,
 q,
 s,
 samp,
-small,
 strike,
-strong,
-sub,
-sup,
 tt,
 var,
-b,
-u,
-i,
 center,
-dl,
-dt,
-dd,
 ol,
 ul,
 li,
@@ -81,7 +68,6 @@ ruby,
 section,
 summary,
 time,
-mark,
 audio,
 video {
   margin: 0;
@@ -136,7 +122,7 @@ table {
 
 /* style */
 body {
-  font: 16px/28px "sf display", helvetica, sans-serif;
+  font: 16px/28px "sf display", "sf text", helvetica, sans-serif;
   background-color: rgb(194, 255, 194);
   color: rgb(49, 38, 38);
   background-image: url(img/kale-salad.jpg);
@@ -147,7 +133,7 @@ body {
   left: 0;
   right: 0;
   height: 45px;
-  background-color: #f9c49a;
+  background-color: #ffb579;
   border-bottom: 5px solid #ec823a;
   z-index: 2;
 }
@@ -170,18 +156,19 @@ body {
 
 .links ul li a {
   text-decoration: none;
-  color: green;
+  color: rgb(117, 52, 9);
   padding: 5px;
 }
 
 .links a:hover {
-  background-color: rgb(198, 255, 113);
-  color: green;
+  border-radius: 30%;
+  background-color: rgb(105, 40, 14);
+  color: rgb(255, 234, 164);
 }
 
 .container {
   background-color: lemonchiffon;
-  width: 960px;
+  width: 1000px;
   margin: 100px auto;
   position: relative;
 }
@@ -238,7 +225,23 @@ body {
   font-size: 30px;
   font-weight: bolder;
 }
-
+.header .subjudul {
+  font-style: italic;
+}
+.penulis {
+  font-size: 11px;
+  margin-top: -5px;
+}
+.penulis a {
+  color: maroon;
+  text-decoration: none;
+}
+.penulis a:hover {
+  border: 10px;
+  border-radius: 25%;
+  color: antiquewhite;
+  background-color: brown;
+}
 .hero {
   height: 400px;
   background-image: url(img/hero.jpg);
@@ -249,33 +252,34 @@ body {
 }
 .main {
   padding: 20px;
-  width: 600px;
+  width: 700px;
   box-sizing: border-box;
   float: left;
-}
-.main .penulis {
-  font-size: 11px;
-  margin-top: -5px;
-}
-.main .penulis a {
-  color: maroon;
-  text-decoration: none;
-}
-.main .penulis a:hover {
-  color: antiquewhite;
-  background-color: brown;
 }
 .main h2 {
   font-size: 25px;
   font-weight: bold;
 }
 .main p {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 15px;
+}
+.main h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main ol,
+ul {
+  text-indent: 30px;
+  list-style: square;
+  list-style-position: inside;
+}
+.main dl {
+  text-indent: 20px;
 }
 /* sidebar */
 .sidebar {
-  width: 300px;
+  width: 250px;
   float: right;
   padding: 20px;
 }

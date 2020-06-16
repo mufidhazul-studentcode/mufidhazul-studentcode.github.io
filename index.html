@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Portfolio" />
+    <meta name="author" content="Mufidha Zulfulansyah" />
+    <meta name="keywords" content="Portfolio,Portofolio" />
     <title>Mfd.</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts.css" />
@@ -22,13 +25,13 @@
       <p>Mfd.</p>
       <div class="links">
         <ul>
-          <li><a href="#">Sekilas</a></li>
-          <li><a href="#">Edukasi</a></li>
-          <li><a href="#">Pengalaman</a></li>
+          <li><a href="#sekilas">Sekilas</a></li>
+          <li><a href="#edukasi">Edukasi</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
           <!-- organisasi & prestasi -->
-          <li><a href="#">Kemampuan</a></li>
-          <li><a href="#">Portofolio</a></li>
-          <li><a href="#">Kontak</a></li>
+          <li><a href="#kemampuan">Kemampuan</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#kontak">Kontak</a></li>
           <!-- copirait -->
         </ul>
       </div>
@@ -54,34 +57,92 @@
       >
       <div class="header">
         <h1 class="judul">Haihai, aku Mufid.</h1>
+        <h6 class="subjudul">
+          Just a hooman who learn how to be a beneficial person 📿
+        </h6>
         <p class="penulis">
-          Ditulis by <a href="#writer">mufidha.zul</a>, pada 4 Juni 2020
+          Ditulis by <a href="#penulis">mufidha.zul</a>, pada 15 Juni 2020
         </p>
       </div>
       <div class="hero"></div>
+      <div id="sekilas"></div>
       <div class="content cf">
         <div class="main">
-          <h2>Judul article</h2>
+          <h2>Sekilas</h2>
+          <hr />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-            reprehenderit corrupti sapiente voluptas, veritatis, dignissimos
-            ducimus distinctio fuga accusamus quaerat nisi molestias explicabo
-            ex eligendi fugiat rem veniam obcaecati velit.
+            Seorang pelajar salah satu Madrasah Aliyah di Yogyakarta jurusan
+            Matematika dan Ilmu Alam (MIA) yang sedang ingin
+            <i>nyicil</i> belajar koding.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ex
-            aspernatur iure tempore magnam. Quas, magni molestiae accusamus
-            consequuntur dolor delectus ea dicta. Provident possimus rerum minus
-            sed, a fugiat quo debitis. Voluptates culpa sint, doloremque
-            reiciendis veniam ullam dicta quidem possimus dolorum dolor placeat,
-            ad totam at odio. Iste maxime qui nostrum consequatur quae obcaecati
-            soluta omnis nobis. Dicta iusto officiis fugiat nulla fuga
-            perspiciatis doloribus saepe, et sed recusandae animi voluptatem quo
-            fugit velit necessitatibus tempora maiores omnis reiciendis corporis
-            quas! Eum eius dolor voluptatum praesentium officiis, expedita,
-            dicta iusto quas est aspernatur rerum asperiores consequatur vero
-            laudantium?
+            Seharusnya dia menjadi seorang ambis gitu, kek temen<sup>2</sup>nya
+            yang uda review materi dari kelas X lah,
+            <em>tryout</em> sana-sini lah, latihan TPA-TPS sana-sini lah, dan
+            banyak lagi hal<sup>2</sup> yang <i>harusnya</i> dilakukan olehnya.
+            Namun karena rasa ingintau nya, maka dia memutuskan untuk
+            <i id="edukasi">sinau</i> koding.
+            <em><del>Raketang sitik :))</del></em>
           </p>
+          <br />
+          <h2 id="edukasi">Edukasi</h2>
+          <hr />
+          <p>
+            Sementara ini, ada beberapa jenjang studi yang telah ia tempuh,
+            diantaranya;
+          </p>
+          <dl>
+            <dt><strong>1. TK Baik, Krapyak, Yogyakarta</strong></dt>
+            <dd><i>Kindergarten</i> --> 2007 - 2009.</dd>
+            <dt>
+              <strong>2. SD Muhammadiyah Suryowijayan, Yogyakarta</strong>
+            </dt>
+            <dd><i>Elementary school</i> --> 2009 - 2015.</dd>
+            <dt>
+              <strong>3. Madrasah Mu'allimin Muhammadiyah Yogyakarta</strong>
+            </dt>
+            <dd id="pengalaman"><i>High School</i> --> 2015 - present.</dd>
+          </dl>
+          <br />
+          <h2>Pengalaman</h2>
+          <hr />
+          <p>
+            Sampai saat ini, ia telah memiliki beberapa pengalaman. Pengalaman
+            disini akan dibagi menjadi dua bagian;
+          </p>
+          <h3 id="organisasi">1. Organisasi</h3>
+          <br />
+          <figure style="float: left; margin-left: 20px; margin-right: 25px;">
+            <img
+              src="img/summit.jpg"
+              alt="SUMMITjr"
+              width="300px"
+              style="border-radius: 10%;"
+            />
+            <figcaption style="text-align: left; text-indent: 100px;">
+              <sup>a. SUMMIT Jr.</sup>
+            </figcaption>
+          </figure>
+
+          <figure class="cf">
+            <img
+              src="img/hw.jpg"
+              alt="dep"
+              width="300px"
+              style="border-radius: 10%;"
+            />
+            <figcaption style="text-align: left; text-indent: 100px;">
+              <sup>b. DEP Muin</sup>
+            </figcaption>
+          </figure>
+          <dl>
+            <dt>a. Student of Mu'allimin Medical Team (SUMMIT) Junior</dt>
+            <dd><i>as</i> Public Relations Division (2015 - 2016)</dd>
+            <dt>b. Dewan Eksekutif Penghela Qabilah Ki Bagus Hadikusuma</dt>
+            <dd><i>as</i> Vice Secretary (2018 - 2019)</dd>
+          </dl>
+          <h3 id="prestasi">2. Prestasi</h3>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod
             obcaecati veritatis, velit veniam nemo tempore aspernatur
@@ -101,7 +162,7 @@
             cupiditate! Tempore.
           </p>
         </div>
-        <div class="sidebar" id="writer">
+        <div class="sidebar" id="penulis">
           <h3>Tentang Writer</h3>
           <img src="img/me.jpg" alt="Mufidha Zul" />
           <p>

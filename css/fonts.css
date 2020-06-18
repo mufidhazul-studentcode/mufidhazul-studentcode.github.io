@@ -1,0 +1,226 @@
+@font-face {
+  font-family: sf display;
+  font-weight: 900;
+  src: url(../fonts/SFUIDisplay-Black.otf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 700;
+  src: url(../fonts/SFUIDisplay-Bold.ttf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 800;
+  src: url(../fonts/SFUIDisplay-Heavy.otf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 200;
+  src: url(../fonts/SFUIDisplay-Light.ttf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 500;
+  src: url(../fonts/SFUIDisplay-Medium.otf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 400;
+  src: url(../fonts/SFUIDisplay-Regular.otf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 600;
+  src: url(../fonts/SFUIDisplay-Semibold.otf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 300;
+  src: url(../fonts/SFUIDisplay-Thin.otf);
+}
+@font-face {
+  font-family: sf display;
+  font-weight: 100;
+  src: url(../fonts/SFUIDisplay-Ultralight.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 700;
+  src: url(../fonts/SFUIText-Bold.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/SFUIText-BoldItalic.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 800;
+  src: url(../fonts/SFUIText-Heavy.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 800;
+  font-style: italic;
+  src: url(../fonts/SFUIText-HeavyItalic.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 200;
+  src: url(../fonts/SFUIText-Light.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 200;
+  font-style: italic;
+  src: url(../fonts/SFUIText-LightItalic.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 500;
+  src: url(../fonts/SFUIText-Medium.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 500;
+  font-style: italic;
+  src: url(../fonts/SFUIText-MediumItalic.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 400;
+  src: url(../fonts/SFUIText-Regular.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/SFUIText-RegularItalic.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 600;
+  src: url(../fonts/SFUIText-Semibold.otf);
+}
+@font-face {
+  font-family: sf text;
+  font-weight: 600;
+  font-style: italic;
+  src: url(../fonts/SFUIText-SemiboldItalic.otf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 700;
+  src: url(../fonts/SFMono-Bold.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/SFMono-BoldItalic.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 800;
+  src: url(../fonts/SFMono-Heavy.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 800;
+  font-style: italic;
+  src: url(../fonts/SFMono-HeavyItalic.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 200;
+  src: url(../fonts/SFMono-Light.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 200;
+  font-style: italic;
+  src: url(../fonts/SFMono-LightItalic.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 500;
+  src: url(../fonts/SFMono-Medium.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 500;
+  font-style: italic;
+  src: url(../fonts/SFMono-MediumItalic.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 400;
+  src: url(../fonts/SFMono-Regular.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/SFMono-RegularItalic.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 600;
+  src: url(../fonts/SFMono-Semibold.ttf);
+}
+@font-face {
+  font-family: sf mono;
+  font-weight: 600;
+  font-style: italic;
+  src: url(../fonts/SFMono-SemiboldItalic.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 700;
+  src: url(../fonts/Ubuntu-B.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 200;
+  src: url(../fonts/Ubuntu-L.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 500;
+  src: url(../fonts/Ubuntu-M.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 400;
+  src: url(../fonts/Ubuntu-R.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 300;
+  src: url(../fonts/Ubuntu-Th.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/Ubuntu-BI.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 200;
+  font-style: italic;
+  src: url(../fonts/Ubuntu-LI.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 500;
+  font-style: italic;
+  src: url(../fonts/Ubuntu-MI.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/Ubuntu-RI.ttf);
+}

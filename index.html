@@ -7,8 +7,8 @@
     <meta name="author" content="Mufidha Zulfulansyah" />
     <meta name="keywords" content="Portfolio,Portofolio" />
     <title>Mfd.</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Ubuntu"
@@ -28,7 +28,7 @@
           <li><a href="#sekilas">Sekilas</a></li>
           <li><a href="#edukasi">Edukasi</a></li>
           <li><a href="#pengalaman">Pengalaman</a></li>
-          <!-- organisasi & prestasi -->
+          <!-- organisasi gosa pake prestasi -->
           <li><a href="#kemampuan">Kemampuan</a></li>
           <li><a href="#portofolio">Portofolio</a></li>
           <li><a href="#kontak">Kontak</a></li>
@@ -71,8 +71,8 @@
           <h2>Sekilas</h2>
           <hr />
           <p>
-            Seorang pelajar salah satu Madrasah Aliyah di
-            <mark>Yogyakarta</mark> jurusan Matematika dan Ilmu Alam
+            Seorang pelajar salah satu Madrasah Aliyah di Yogyakarta jurusan
+            Matematika dan Ilmu Alam
             <u><small>(MIA)</small></u> yang sedang ingin <i>nyicil</i> belajar
             koding.
           </p>
@@ -84,9 +84,10 @@
             Namun karena rasa ingintau nya, maka dia memutuskan untuk
             <i id="edukasi">sinau</i> koding.
             <em><del>Raketang sitik :))</del></em>
+            <br />
+            <br />
           </p>
-          <>Dia juga seo</p>
-          <br />
+
           <h2 id="edukasi">Edukasi</h2>
           <hr />
           <p>
@@ -106,13 +107,13 @@
             <dd id="pengalaman"><i>High School</i> --> 2015 - present.</dd>
           </dl>
           <br />
-          <h2>Pengalaman</h2>
+          <h2>Pengalaman ber-Organisasi</h2>
           <hr />
           <p>
-            Sampai saat ini, ia telah memiliki beberapa pengalaman. Pengalaman
-            disini akan dibagi menjadi dua bagian;
+            Sampai saat ini, ia telah memiliki beberapa pengalaman. Dalam hal
+            organisasi, berikut adalah beberapa diantaranya;
           </p>
-          <h3 id="organisasi">1. Organisasi</h3>
+
           <br />
           <figure style="float: left; margin-left: 20px; margin-right: 25px;">
             <img
@@ -137,18 +138,52 @@
               <sup>b. DEP Muin</sup>
             </figcaption>
           </figure>
-          <dl>
-            <dt>a. Student of Mu'allimin Medical Team (SUMMIT) Junior</dt>
-            <dd><i>as</i> Public Relations Division (2015 - 2016)</dd>
-            <dt>b. Dewan Eksekutif Penghela Qabilah Ki Bagus Hadikusuma</dt>
-            <dd><i>as</i> Vice Secretary (2018 - 2019)</dd>
-          </dl>
-          <h3 id="prestasi">2. Prestasi</h3>
+          <figure style="float: left; margin-left: 20px; margin-right: 25px;">
+            <img
+              src="img/ikmmmy.jpg"
+              alt="IKMMMY"
+              width="300px"
+              style="border-radius: 10%;"
+            />
+            <figcaption style="text-align: left; text-indent: 100px;">
+              <sup>c. IKMMMY</sup>
+            </figcaption>
+          </figure>
 
-          <p id="kemampuan">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod
-            obcaecati veritatis.
-          </p>
+          <figure class="cf">
+            <img
+              src="img/lpm.jpg"
+              alt="LPM"
+              width="300px"
+              style="border-radius: 10%;"
+            />
+            <figcaption style="text-align: left; text-indent: 100px;">
+              <sup>d. LPM</sup>
+            </figcaption>
+          </figure>
+          <dl>
+            <dt>
+              <b>a. Student of Mu'allimin Medical Team (SUMMIT) Junior</b>
+            </dt>
+            <dd><i>as</i> Public Relations Division (2015 - 2016)</dd>
+            <dt>
+              <b
+                >b. Dewan Eksekutif Penghela (DEP) Qabilah Ki Bagus
+                Hadikusuma</b
+              >
+            </dt>
+            <dd><i>as</i> Vice Secretary (2018 - 2019)</dd>
+            <dt>
+              <b
+                >c. Ikatan Keluarga Mu'allimin Mu'allimaat Muhammadiyah
+                Yogyakarta (IKMMMY)</b
+              >
+            </dt>
+            <dd><i>as</i> member of Cadre and Da'wa Division (2018 - 2020)</dd>
+            <dt><b>d. Lembaga Pers Mu'allimin (LPM)</b></dt>
+            <dd><i>as</i> member of Layouter Division (2019 - 2020)</dd>
+          </dl>
+          <p id="kemampuan"></p>
           <br />
           <h2>Kemampuan</h2>
           <hr />
@@ -202,14 +237,17 @@
           </table>
         </div>
         <div class="sidebar" id="penulis">
-          <h3>Tentang Writer</h3>
+          <h3 id="kontak">Tentang Writer</h3>
           <img src="img/me.jpg" alt="Mufidha Zul" style="border-radius: 50%;" />
           <p>
             Uda dijelasin di .main kali yak 😁 Kalo di .sidebar ini paling cuma
             kontak nya aja lah yha~
           </p>
           <div class="cf"></div>
-          <p>Nomor cellphone : +62 853-2945-5891</p>
+          <p>📞 Nomor cellphone :</p>
+          <p>
+            <mark><b>+62 853-2945-5891</b></mark>
+          </p>
           <p>
             atau
             <a href="https://api.whatsapp.com/send?phone=6285329455891"
@@ -217,15 +255,23 @@
             >
             untuk langsung pc via WhatsApp dengannya.
           </p>
+          <br />
           <p>
             Oiya untuk sosmed sudah tertera diatas yah... deketnya titel utama /
-            h1 di halaman ini
+            h1 di halaman ini.
           </p>
         </div>
       </div>
-      <div class="footer">
+      <div
+        class="footer"
+        style="
+          font-family: ubuntu;
+          background-color: rgb(82, 40, 10);
+          padding: 10px;
+          text-align: center;
+        "
+      >
         <p class="copy">Copyright &copy; 2020. mufidha.zul.</p>
-        
         <p class="copy2">All rights reserved.</p>
       </div>
     </div>

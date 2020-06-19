@@ -6,6 +6,7 @@
 html,
 body,
 span,
+div,
 applet,
 object,
 iframe,
@@ -68,6 +69,7 @@ section,
 summary,
 time,
 audio,
+li,
 video {
   margin: 0;
   padding: 0;
@@ -97,7 +99,8 @@ body {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -167,7 +170,7 @@ body {
 
 .container {
   background-color: lemonchiffon;
-  width: 1000px;
+  width: 1250px;
   margin: 100px auto;
   position: relative;
 }
@@ -241,17 +244,33 @@ body {
   color: antiquewhite;
   background-color: brown;
 }
-.hero {
-  height: 400px;
-  background-image: url(../img/hero.jpg);
-  background-size: cover;
-  background-position: 0 -125px;
+.zoom {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
   border-bottom: 5px solid rgb(163, 74, 40);
   border-top: 5px solid rgb(245, 139, 84);
 }
+.boxzoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.boxzoom img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 1250px;
+  position: relative;
+}
+.zoom:hover .boxzoom img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+/* main stail / gaya / style */
 .main {
   padding: 20px;
-  width: 700px;
+  width: 1030px;
   box-sizing: border-box;
   float: left;
   line-height: 23px;
@@ -277,11 +296,16 @@ ul {
 .main dl {
   text-indent: 20px;
 }
+/* galeri  organisasi */
+.container .main figure {
+  float: left;
+  margin-right: 5px;
+}
 /* tabel skill kemampuan */
 .kemampuan {
   color: #444;
   border-collapse: collapse;
-  width: 650px;
+  width: 950px;
   margin: auto;
 }
 
@@ -309,11 +333,141 @@ td {
 .kemampuan tr:nth-child(even):hover {
   background-color: rgb(245, 235, 151);
 }
+/* galeri + lightbox portofolio */
+.portofolio {
+  width: 890px;
+  background-color: beige;
+  margin: auto;
+  padding: 15px 0px 5px 30px;
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.gallery li,
+.gallery li img,
+.gallery li span {
+  border-radius: 50%;
+}
+.gallery li {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #2a7886;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.gallery li img {
+  margin-left: -30px;
+}
+.gallery li span {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  text-indent: 0;
+  text-align: center;
+  line-height: 150px;
+  color: rgb(51, 23, 2);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transform: scale(0) rotate(0);
+  transition: 0.3s;
+}
+.gallery li a:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+/* overlay lightbox */
+.overlay {
+  width: 0;
+  height: 0;
+  text-align: center;
+  padding: 100px 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+  transition: 0.5s;
+}
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.portofolio .gallery .overlay img {
+  border-radius: 10px;
+  max-height: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.overlay:target img {
+  animation: ZoomFade 1s;
+}
+.overlay .close {
+  position: absolute;
+  top: 10px;
+  left: 49%;
+  opacity: 0;
+}
+.overlay:target .close {
+  animation: SlideDown 0.5s 1s forwards;
+}
+.overlay .label {
+  position: absolute;
+  bottom: 10px;
+  padding: 5px;
+  width: fit-content;
+  text-indent: 0;
+  background-color: rgb(255, 241, 164);
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+.overlay:target .label {
+  animation: SlideUp 1s forwards;
+}
+/* animasi overlay */
+@keyframes ZoomFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes SlideDown {
+  0% {
+    opacity: 0;
+    margin-top: -15px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 0;
+  }
+}
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    margin-bottom: -15px;
+  }
+  100% {
+    opacity: 100%;
+    margin-bottom: 0;
+  }
+}
 /* sidebar */
 .sidebar {
-  width: 250px;
+  width: 200px;
   float: right;
-  padding: 20px;
+  padding: 10px;
 }
 .sidebar img {
   width: 100px;
